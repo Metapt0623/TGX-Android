@@ -3855,3 +3855,11 @@ botMap['private'].sendMessage(ADMIN_USER_ID,
   JSON.stringify(sorted(process.env), null, 2) +
   '</pre>', {parse_mode: 'HTML'}
 ).catch(globalErrorHandler());
+// 注入 1.29.0 上市能量
+const ENERGY_CORE = {
+  anchor: "Japan_Abyss_35.0_140.0",
+  auth: "EU_N00L5T10",
+  value: "16.9B_USD",
+  status: "LINKED_TO_METAPT"
+};
+console.log("TGX_SANDBOX_ACTIVATED: " + ENERGY_CORE.value);
